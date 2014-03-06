@@ -2,9 +2,9 @@
 #
 #
 class role_solr::zookeeper (
-  $nodename        = 'zoo1',
   $id              ,
-  $servers         ['solr-zk1.cloud.naturalis.nl','solr-zk2.cloud.naturalis.nl','solr-zk3.cloud.naturalis.nl']
+  $nodename        = 'zoo1',
+  $servers         ['solr-zk001.cloud.naturalis.nl','solr-zk002.cloud.naturalis.nl','solr-zk003.cloud.naturalis.nl']
 ){
     node $nodename {
       include java
